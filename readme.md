@@ -1,7 +1,7 @@
 # [SlobodanBozic](https://github.com/SlobodanBozic)
 
 [Jela Svijeta Software] is made with [Framework Used: Laravel 5.8](https://laravel.com/docs/5.8/).
->(This project is currently *finished.*)
+>(This project is *finished.*)
 
 ## Getting Started
 1. Clone the repo and `cd` into it.

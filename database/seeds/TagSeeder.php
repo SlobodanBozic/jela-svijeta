@@ -20,6 +20,15 @@ class TagSeed extends Seeder
             ['title' => 'tag 1 HRV', 'slug' => 'tag-1-hrv', 'language_id' => '2',],
             ['title' => 'tag 1 ENG', 'slug' => 'tag-1-en', 'language_id' => '1',],
             ['title' => 'tag 1 DE', 'slug' => 'tag-1-de', 'language_id' => '3',],
+
+            ['title' => 'tag 2 HRV', 'slug' => 'tag-2-hrv', 'language_id' => '2',],
+            ['title' => 'tag 2 ENG', 'slug' => 'tag-2-en', 'language_id' => '1',],
+            ['title' => 'tag 2 DE', 'slug' => 'tag-2-de', 'language_id' => '3',],
+
+            ['title' => 'tag 3 HRV', 'slug' => 'tag-3-hrv', 'language_id' => '2',],
+            ['title' => 'tag 3 ENG', 'slug' => 'tag-3-en', 'language_id' => '1',],
+            ['title' => 'tag 3 DE', 'slug' => 'tag-3-de', 'language_id' => '3',],
+
         ];
 
         foreach ($items as $item) {

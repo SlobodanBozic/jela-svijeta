@@ -40,79 +40,103 @@
 </tr>
 
 <tr>
-<td><b>get meals per page</b></td>
+<td>get meals per page <b>'default value(lang=hr)'</b></td>
 <td>http://localhost:8000/api/response/meals?per_page=1</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=1">/meals?per_page=1</a></td>
 </tr>
 
 <tr>
-<td><b>Show only first page</b></td>
+<td>Show only first page <b>'default value(lang=hr)'</b></td>
 <td>http://localhost:8000/api/response/meals?page=1</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?page=1">/meals?page=1</a> </td>
 </tr>
 
 <tr>
-<td><b>per_page are 3, lang=hr, with=category,tags,ingredient</b></td>
-<td>http://localhost:8000/api/response/meals?per_page=3&lang=hr&with=category,tag,ingredient</td>
-<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&lang=hr&with=category,tag,ingredient">/meals?per_page=3&lang=hr&with=category,tag,ingredient</a></td>
+<td>per_page are 1, lang=hr, with=category,tags,ingredient <b>'default value(lang=hr)'</b></td>
+<td>http://localhost:8000/api/response/meals?per_page=1&lang=hr&with=category,tag,ingredient</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=1&lang=hr&with=category,tag,ingredient">/meals?per_page=1&lang=hr&with=category,tag,ingredient</a></td>
 </tr>
 
 <tr>
-<td><b>get language HR</b></td>
+<td>per_page are 1, lang=en, with=category,tags,ingredient'</td>
+<td>http://localhost:8000/api/response/meals?per_page=1&lang=en&with=category,tag,ingredient</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=1&lang=en&with=category,tag,ingredient">/meals?per_page=1&lang=en&with=category,tag,ingredient</a></td>
+</tr>
+
+<tr>
+<td>per_page are 1, lang=de, with=category,tags,ingredient</td>
+<td>http://localhost:8000/api/response/meals?per_page=1&lang=de&with=category,tag,ingredient</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=1&lang=de&with=category,tag,ingredient">/meals?per_page=1&lang=de&with=category,tag,ingredient</a></td>
+</tr>
+
+<tr>
+<td>get language <b>HR</b></td>
 <td>http://localhost:8000/api/response/ingredients?lang=hr</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/ingredients?lang=hr">ingredients?lang=hr</a> </td>
 </tr>
 
 <tr>
-<td><b>get language ENG</b></td>
+<td>get language <b>ENG</b></td>
 <td>http://localhost:8000/api/response/ingredients?lang=en</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/ingredients?lang=en">/ingredients?lang=en</a> </td>
 </tr>
 
 <tr>
-<td><b>get language DE</b></td>
+<td>get language <b>DE</b></td>
 <td>http://localhost:8000/api/response/ingredients?lang=de</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/ingredients?lang=de">/ingredients?lang=de</a> </td>
 </tr>
 
 <tr>
-<td><b>get request 'koji se nalazi u zadatku samo bez' diff_time</b></td>
+<td>get request 'koji se nalazi u zadatku samo bez' <b>diff_time</b></td>
 <td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</a></td>
 </tr>
 
 <tr>
-<td><b>get all meals</b></td>
+<td><b>get all meals 'default value(lang=hr)'</b></td>
 <td>http://localhost:8000/api/response/meals</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals">/meals</a></td>
 </tr>
 
 <tr>
-<td><b>get all meals HR</b></td>
+<td>get all meals <b>HR</b></td>
+<td>http://localhost:8000/api/response/meals?lang=hr</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?lang=hr">/meals HR</a></td>
+</tr>
+
+<tr>
+<td>get all meals <b>ENG</b></td>
 <td>http://localhost:8000/api/response/meals?lang=en</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?lang=en">/meals ENG</a></td>
 </tr>
 
 <tr>
-<td><b>get meal by id</b></td>
+<td>get all meals <b>DE</b></td>
+<td>http://localhost:8000/api/response/meals?lang=de</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?lang=de">/meals DE</a></td>
+</tr>
+
+<tr>
+<td>get meal by <b>id</b></td>
 <td>http://localhost:8000/api/response/meals?id=1</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?id=1">/meal id of 1</a></td>
 </tr>
 
 <tr>
-<td><b>get all categories</b></td>
+<td>get all <b>categories</b></td>
 <td>http://localhost:8000/api/response/categories</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/categories">/categories</a></td>
 </tr>
 
 <tr>
-<td><b>get all tags</b></td>
+<td>get all <b>tags</b></td>
 <td>http://localhost:8000/api/response/tags</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/tags">/tags </a> </td>
 </tr>
 
 <tr>
-<td><b>get all ingredients</b></td>
+<td>get all <b>ingredients</b></td>
 <td>http://localhost:8000/api/response/ingredients</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/ingredients">/ingredients </a></td>
 </tr>
