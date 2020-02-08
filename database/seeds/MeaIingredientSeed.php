@@ -18,14 +18,9 @@ class MeaIingredientSeed extends Seeder
         $items = [
 
             ['meal_id' => '1', 'ingredient_id' => '2'],
-            ['meal_id' => '2', 'ingredient_id' => '2'],
-            ['meal_id' => '3', 'ingredient_id' => '2'],
-            ['meal_id' => '4', 'ingredient_id' => '2'],
-            ['meal_id' => '5', 'ingredient_id' => '2'],
-            ['meal_id' => '6', 'ingredient_id' => '2'],
-            ['meal_id' => '7', 'ingredient_id' => '2'],
-
-
+            ['meal_id' => '1', 'ingredient_id' => '5'],
+            ['meal_id' => '2', 'ingredient_id' => '1'],
+            ['meal_id' => '3', 'ingredient_id' => '3'],
         ];
 
         foreach ($items as $item) {

@@ -77,14 +77,20 @@
 
 <tr>
 <td><b>get request 'koji se nalazi u zadatku samo bez' diff_time</b></td>
-<td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=2</td>
-<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=2">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=2</a></td>
+<td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</a></td>
 </tr>
 
 <tr>
 <td><b>get all meals</b></td>
 <td>http://localhost:8000/api/response/meals</td>
 <td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals">/meals</a></td>
+</tr>
+
+<tr>
+<td><b>get all meals HR</b></td>
+<td>http://localhost:8000/api/response/meals?lang=en</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?lang=en">/meals ENG</a></td>
 </tr>
 
 <tr>

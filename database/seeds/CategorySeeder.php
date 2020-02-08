@@ -15,12 +15,10 @@ class CategorySeed extends Seeder
     {
 
         $items = [
+            ['title' => 'Naslov kategorije 1 na ENG jeziku', 'slug' => 'category-1', 'language_id' => '1',],
+            ['title' => 'Naslov kategorije 1 na HRV jeziku', 'slug' => 'category-1', 'language_id' => '2',],  
+            ['title' => 'Naslov kategorije 1 na DE jeziku', 'slug' => 'category-1', 'language_id' => '3',],
 
-            ['title' => 'Naslov kategorije 1 na HRV jeziku', 'slug' => 'category-1', 'language_id' => '2',],
-            ['title' => 'Naslov kategorije 2 na HRV jeziku', 'slug' => 'category-2', 'language_id' => '2',],
-            ['title' => 'Naslov kategorije 3 na HRV jeziku', 'slug' => 'category-3', 'language_id' => '2',],
-            ['title' => 'Naslov kategorije 4 na HRV jeziku', 'slug' => 'category-4', 'language_id' => '2',],
-            ['title' => 'Naslov kategorije 5 na HRV jeziku', 'slug' => 'category-5', 'language_id' => '2',],
 
         ];
 

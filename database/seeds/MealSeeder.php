@@ -17,13 +17,14 @@ class MealSeed extends Seeder
 
         $items = [
 
-            ['title' => 'Naslov jela 1 na HRV jezik', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na HRV jeziku','category_id'=> '1','language_id'=> '2'],
-            ['title' => 'Naslov jela 2 na HRV jeziku', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na HRV jeziku','category_id'=> null,'language_id'=> '2'],
-            ['title' => 'Naslov jela 3 na HRV jeziku', 'slug' => 'jelo-3', 'description' => 'Opis jela 3 na HRV jeziku','category_id'=> '3','language_id'=> '2'],
-            ['title' => 'Naslov jela 4 na HRV jeziku', 'slug' => 'jelo-4', 'description' => 'Opis jela 4 na HRV jeziku','category_id'=> '4','language_id'=> '2'],
-            ['title' => 'Naslov jela 5 na HRV jeziku', 'slug' => 'jelo-5', 'description' => 'Opis jela 5 na HRV jeziku','category_id'=> '5','language_id'=> '2'],
-            ['title' => 'Naslov jela 6 na ENG jeziku', 'slug' => 'jelo-6', 'description' => 'Opis jela 6 na ENG jeziku','category_id'=> '5','language_id'=> '1'],
-            ['title' => 'Naslov jela 7 na DE jeziku', 'slug' => 'jelo-7', 'description' => 'Opis jela 7 na DE jeziku','category_id'=> '5','language_id'=> '3'],
+            ['title' => 'Naslov jela 1 na HRV jezik', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na HRV jeziku','category_id'=> '2','language_id'=> '2'],
+            ['title' => 'Naslov jela 1 na ENG jeziku', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na ENG jeziku','category_id'=> '1','language_id'=> '1'],
+            ['title' => 'Naslov jela 1 na DE jeziku', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na DE jeziku','category_id'=> '3','language_id'=> '3'],
+
+            ['title' => 'Naslov jela 2 na HRV jezik', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na HRV jeziku','category_id'=> '2','language_id'=> '2'],
+            ['title' => 'Naslov jela 2 na ENG jeziku', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na ENG jeziku','category_id'=> '1','language_id'=> '1'],
+            ['title' => 'Naslov jela 2 na DE jeziku', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na DE jeziku','category_id'=> '3','language_id'=> '3'],
+
             ];
 
         foreach ($items as $item) {

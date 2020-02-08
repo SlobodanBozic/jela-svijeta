@@ -17,12 +17,10 @@ class MealTagSeed extends Seeder
 
         $items = [
 
-            ['meal_id' => '1', 'tag_id' => '5'],
-            ['meal_id' => '2', 'tag_id' => '4'],
+            ['meal_id' => '1', 'tag_id' => '1'],
+            ['meal_id' => '2', 'tag_id' => '2'],
             ['meal_id' => '3', 'tag_id' => '3'],
-            ['meal_id' => '4', 'tag_id' => '2'],
-            ['meal_id' => '5', 'tag_id' => '1'],
-
+            
         ];
 
         foreach ($items as $item) {

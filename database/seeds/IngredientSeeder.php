@@ -23,28 +23,6 @@ class IngredientSeed extends Seeder
             ['title' => 'Naslov sastojka 2 ENG', 'slug' => 'sastojak-2', 'language_id' => '1',],
             ['title' => 'Naslov sastojka 2 HR', 'slug' => 'sastojak-2', 'language_id' => '2',],
             ['title' => 'Naslov sastojka 2 DE', 'slug' => 'sastojak-2', 'language_id' => '3',],
-
-
-            ['title' => 'Naslov sastojka 3 ENG', 'slug' => 'sastojak-3', 'language_id' => '1',],
-            ['title' => 'Naslov sastojka 3 HR', 'slug' => 'sastojak-3', 'language_id' => '2',],
-            ['title' => 'Naslov sastojka 3 DE', 'slug' => 'sastojak-3', 'language_id' => '3',],
-
-            ['title' => 'Naslov sastojka 4 ENG', 'slug' => 'sastojak-4', 'language_id' => '1',],
-            ['title' => 'Naslov sastojka 4 HR', 'slug' => 'sastojak-4', 'language_id' => '2',],
-            ['title' => 'Naslov sastojka 4 DE', 'slug' => 'sastojak-4', 'language_id' => '3',],
-
-            ['title' => 'Naslov sastojka 5 ENG', 'slug' => 'sastojak-5', 'language_id' => '1',],
-            ['title' => 'Naslov sastojka 5 HR', 'slug' => 'sastojak-5', 'language_id' => '2',],
-            ['title' => 'Naslov sastojka 5 DE', 'slug' => 'sastojak-5', 'language_id' => '3',],
-
-            ['title' => 'Naslov sastojka 6 na ENG', 'slug' => 'sastojak-6', 'language_id' => '1',],
-            ['title' => 'Naslov sastojka 6 HR', 'slug' => 'sastojak-5', 'language_id' => '2',],
-            ['title' => 'Naslov sastojka 6 DE', 'slug' => 'sastojak-6', 'language_id' => '3',],
-
-            ['title' => 'Naslov sastojka 7 na ENG', 'slug' => 'sastojak-7', 'language_id' => '1',],
-            ['title' => 'Naslov sastojka 7 HR', 'slug' => 'sastojak-7', 'language_id' => '2',],
-            ['title' => 'Naslov sastojka 7 na DE', 'slug' => 'sastojak-7', 'language_id' => '3',],
-
         ];
 
         foreach ($items as $item) {
