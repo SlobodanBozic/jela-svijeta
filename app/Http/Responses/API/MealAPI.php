@@ -17,27 +17,20 @@ class MealAPI extends Resource
 
     public function toArray($request)
     {
-        return [
 
-            'id' => $this->id,
-            'title' => $this->title,
-            'description' => $this->description,
-            'status' => $this->deleted_at > 0 ? 'deleted' : 'created',
-            'category' => $this->category === NULL ? $this->category = NULL :
-            [
-                'id' => $this->category->id,
-                'title' => $this->category->title,
-                'slug' => $this->category->slug
-              ],
-
-            'tags' => [
-                $this->tag
-            ],
-
-            'ingredients' => [
-               $this->ingredient
-            ]
+    return[
+          'id' => $this->id,
+          'title' => $this->title,
+          'description' => $this->description,
+          'status' => $this->status,
+          'category' => is_null($this->category) ? $this->category = NULL :
+          [
+              'id' => $this->category->id,
+              'title' => $this->category->title,
+              'slug' => $this->category->slug
+          ],
+          'tag' => $this->when(isset($this->tag) ,  $this->tag),
+          'ingredients' => $this->when(isset($this->ingredient) ,  $this->ingredient),
         ];
-
     }
 }

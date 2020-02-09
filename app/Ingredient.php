@@ -18,13 +18,13 @@ class Ingredient extends Model
 use SoftDeletes;
     protected $fillable = ['title', 'slug', 'language_id'];
     public $timestamps = false;
-
+    protected $hidden = ['pivot'];
 
     /**
      * Set to null if empty
      * @param $input
      */
-  
+
 
     public function language()
     {

@@ -16,8 +16,8 @@ class TagQueryBuilder extends QueryBuilder
 	public function filterByTag($query, $tag)
 	{
 
-       return DB::table('meal_tag')
-                ->where('tag_id', $tag)
-                ->get();
-	}
+  //      return DB::table('meal_tag')
+  //               ->where('tag_id', $tag)
+  //               ->get();
+	// }
 }

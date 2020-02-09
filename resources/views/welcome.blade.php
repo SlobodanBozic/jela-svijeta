@@ -88,9 +88,12 @@
 </tr>
 
 <tr>
-<td>get request 'koji se nalazi u zadatku samo bez' <b>diff_time</b></td>
-<td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</td>
-<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&page=1</a></td>
+<td>get request 'koji se nalazi u zadatku'</td>
+<td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
+time=1493902343&page=1</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
+time=1493902343&page=1">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
+time=1493902343&page=1</a></td>
 </tr>
 
 <tr>
@@ -119,8 +122,20 @@
 
 <tr>
 <td>get meal by <b>id</b></td>
-<td>http://localhost:8000/api/response/meals?id=1</td>
-<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?id=1">/meal id of 1</a></td>
+<td>http://localhost:8000/api/response/meals/1</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals/1">/meal id of 1</a></td>
+</tr>
+
+<tr>
+<td>get meal by <b>difftime:1578581616 = 01/09/2020 15:53:36</b> status=<b>created</b></td>
+<td>http://localhost:8000/api/response/meals?diff_time=1578581616</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?diff_time=1578581616">/meal difftime:1578581616 = 01/09/2020 15:53:36</a></td>
+</tr>
+
+<tr>
+<td>get meal by <b>difftime:1589032416 = 05/09/2020 15:53:36</b> status=<b>modified</b></td>
+<td>http://localhost:8000/api/response/meals?diff_time=1589032416</td>
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?diff_time=1589032416">/meal difftime:1589032416  = 05/09/2020 15:53:36</a></td>
 </tr>
 
 <tr>

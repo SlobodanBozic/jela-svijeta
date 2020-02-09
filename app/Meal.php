@@ -19,7 +19,6 @@ class Meal extends Model
 
     use SoftDeletes;
     protected $fillable = ['title', 'slug', 'description', 'category_id', 'language_id'];
-
     /**
      * Set to null if empty
      * @param $input
@@ -28,22 +27,22 @@ class Meal extends Model
 
     public function category() // Inverse One To One Relationship
     {
-        return $this->belongsTo(Category::class, 'category_id')->withTrashed();
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
     public function tag()
     {
-        return $this->belongsToMany(Tag::class, 'meal_tag')->withTrashed();
+        return $this->belongsToMany(Tag::class, 'meal_tag');
     }
 
     public function ingredient()
     {
-        return $this->belongsToMany(Ingredient::class, 'meal_ingredient')->withTrashed();
+        return $this->belongsToMany(Ingredient::class, 'meal_ingredient');
     }
 
     public function language()
     {
-        return $this->belongsTo(Language::class, 'language_id')->withTrashed();
+        return $this->belongsTo(Language::class, 'language_id');
     }
 
 }
