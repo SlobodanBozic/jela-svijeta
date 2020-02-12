@@ -12,13 +12,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string $slug
  * @property string $description
  * @property string $category
- * @property string $language
 */
 class Meal extends Model
 {
-
+    use \Dimsav\Translatable\Translatable;
     use SoftDeletes;
-    protected $fillable = ['title', 'slug', 'description', 'category_id', 'language_id'];
+    protected $fillable = ['category_id'];
+    public $translatedAttributes = ['title', 'slug','description'];
+    protected $hidden = ['translations','deleted_at'];
+
     /**
      * Set to null if empty
      * @param $input
@@ -38,11 +40,6 @@ class Meal extends Model
     public function ingredient()
     {
         return $this->belongsToMany(Ingredient::class, 'meal_ingredient');
-    }
-
-    public function language()
-    {
-        return $this->belongsTo(Language::class, 'language_id');
     }
 
 }

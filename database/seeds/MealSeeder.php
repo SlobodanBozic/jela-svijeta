@@ -17,17 +17,9 @@ class MealSeed extends Seeder
 
         $items = [
 
-            ['title' => 'Naslov jela 1 na HRV jezik', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na HRV jeziku','category_id'=> '2','language_id'=> '2'],
-            ['title' => 'Naslov jela 1 na ENG jeziku', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na ENG jeziku','category_id'=> '1','language_id'=> '1'],
-            ['title' => 'Naslov jela 1 na DE jeziku', 'slug' => 'jelo-1', 'description' => 'Opis jela 1 na DE jeziku','category_id'=> '3','language_id'=> '3'],
-
-            ['title' => 'Naslov jela 2 na HRV jezik', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na HRV jeziku','category_id'=> '5','language_id'=> '2'],
-            ['title' => 'Naslov jela 2 na ENG jeziku', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na ENG jeziku','category_id'=> '4','language_id'=> '1'],
-            ['title' => 'Naslov jela 2 na DE jeziku', 'slug' => 'jelo-2', 'description' => 'Opis jela 2 na DE jeziku','category_id'=> '6','language_id'=> '3'],
-
-            ['title' => 'Naslov jela 3 na HRV jezik', 'slug' => 'jelo-3', 'description' => 'Opis jela 3 na HRV jeziku','category_id'=> NULL,'language_id'=> '2'],
-            ['title' => 'Naslov jela 3 na ENG jeziku', 'slug' => 'jelo-3', 'description' => 'Opis jela 3 na ENG jeziku','category_id'=> NULL,'language_id'=> '1'],
-            ['title' => 'Naslov jela 3 na DE jeziku', 'slug' => 'jelo-3', 'description' => 'Opis jela 3 na DE jeziku','category_id'=> NULL,'language_id'=> '3'],
+            ['category_id'=> '1',],
+            ['category_id'=> '2',],
+            ['category_id'=> NULL,],
 
             ];
 
@@ -42,11 +34,9 @@ class MealSeed extends Seeder
         //
         // for ($i = 0; $i < $limit; $i++) {
         //     DB::table('meals')->insert([ //,
-        //         'title' => $faker->unique()->word,
-        //         'slug' => $faker->unique()->slug,
-        //         'description' => $faker->unique()->word,
-        //         'category_id' => $faker->numberBetween($min = 1, $max = 3),
-        //         'language_id' => $faker->numberBetween($min = 1, $max = 3)
+
+        //     'category_id' => $faker->numberBetween($min = 1, $max = 3),
+
         //     ]);
         // }
 

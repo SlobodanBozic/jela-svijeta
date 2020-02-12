@@ -16,12 +16,24 @@ class CreateCategoriesTable extends Migration
       if(! Schema::hasTable('categories')) {
           Schema::create('categories', function (Blueprint $table) {
               $table->increments('id');
-              $table->string('title')->nullable();
-              $table->string('slug')->nullable();
               $table->softDeletes();
               $table->index(['deleted_at']);
           });
       }
+
+      if(! Schema::hasTable('category_translations')) {
+        Schema::create('category_translations', function(Blueprint $table)
+          {
+              $table->increments('id');
+              $table->integer('category_id')->unsigned();
+              $table->string('locale')->index();
+              $table->string('title')->nullable();
+              $table->string('slug')->nullable();
+              $table->unique(['category_id','locale']);
+              $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+          });
+        }
+
     }
 
     /**

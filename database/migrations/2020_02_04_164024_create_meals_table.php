@@ -16,9 +16,6 @@ class CreateMealsTable extends Migration
       if(! Schema::hasTable('meals')) {
           Schema::create('meals', function (Blueprint $table) {
               $table->increments('id');
-              $table->string('title')->nullable();
-              $table->string('slug')->nullable();
-              $table->string('description')->nullable();
               $table->string('status')->default('created');
               $table->timestamps();
               $table->softDeletes();
@@ -26,6 +23,23 @@ class CreateMealsTable extends Migration
               $table->index(['deleted_at']);
           });
       }
+
+      if(! Schema::hasTable('meal_translations')) {
+        Schema::create('meal_translations', function(Blueprint $table)
+          {
+              $table->increments('id');
+              $table->integer('meal_id')->unsigned();
+              $table->string('locale')->index();
+
+              $table->string('title');
+              $table->string('slug');
+              $table->string('description');
+
+              $table->unique(['meal_id','locale']);
+              $table->foreign('meal_id')->references('id')->on('meals')->onDelete('cascade');
+          });
+        }
+
     }
 
     /**

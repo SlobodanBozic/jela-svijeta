@@ -14,21 +14,17 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 */
 class Ingredient extends Model
 {
-
-use SoftDeletes;
-    protected $fillable = ['title', 'slug', 'language_id'];
+    use \Dimsav\Translatable\Translatable;
+    use SoftDeletes;
+    protected $fillable = [];
+    public $translatedAttributes = ['title', 'slug'];
     public $timestamps = false;
-    protected $hidden = ['pivot'];
+    protected $hidden = ['pivot','translations'];
 
     /**
      * Set to null if empty
      * @param $input
      */
 
-
-    public function language()
-    {
-        return $this->belongsTo(Language::class, 'language_id');
-    }
 
 }

@@ -18,11 +18,6 @@ class AddRelationshipsToMealTable extends Migration
               $table->integer('category_id')->unsigned()->nullable();
               $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
               }
-              if (!Schema::hasColumn('meals', 'language_id')) {
-              $table->integer('language_id')->unsigned()->nullable();
-              $table->foreign('language_id')->references('id')->on('languages')->onDelete('cascade');
-              }
-
       });
     }
 

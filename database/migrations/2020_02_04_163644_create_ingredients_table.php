@@ -16,12 +16,26 @@ class CreateIngredientsTable extends Migration
       if(! Schema::hasTable('ingredients')) {
           Schema::create('ingredients', function (Blueprint $table) {
               $table->increments('id');
-              $table->string('title');
-              $table->string('slug');
               $table->softDeletes();
               $table->index(['deleted_at']);
           });
       }
+
+      if(! Schema::hasTable('ingredient_translations')) {
+        Schema::create('ingredient_translations', function(Blueprint $table)
+          {
+              $table->increments('id');
+              $table->integer('ingredient_id')->unsigned();
+              $table->string('locale')->index();
+
+              $table->string('title');
+              $table->string('slug');
+
+              $table->unique(['ingredient_id','locale']);
+              $table->foreign('ingredient_id')->references('id')->on('ingredients')->onDelete('cascade');
+          });
+        }
+
     }
 
     /**

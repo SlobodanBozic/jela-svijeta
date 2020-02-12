@@ -10,23 +10,21 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @package App
  * @property string $title
  * @property string $slug
- * @property string $language
 */
 class Tag extends Model
 {
+    use \Dimsav\Translatable\Translatable;
     use SoftDeletes;
 
-    protected $fillable = ['title', 'slug', 'language_id'];
+    protected $fillable = [];
+    public $translatedAttributes = ['title', 'slug'];
     public $timestamps = false;
-    protected $hidden = ['pivot'];
+    protected $hidden = ['pivot','translations'];
+
 
     /**
      * Set to null if empty
      * @param $input
      */
 
-    public function language()
-    {
-        return $this->belongsTo(Language::class, 'language_id');
-    }
 }

@@ -12,8 +12,9 @@
 
         <!-- Styles -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 
         <style>
         tr {
@@ -36,7 +37,6 @@
 <th>Name</th>
 <th>Request Example</th>
 <th>Request Link</th>
-
 </tr>
 
 <tr>
@@ -89,10 +89,10 @@
 
 <tr>
 <td>get request 'koji se nalazi u zadatku'</td>
-<td>per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
+<td>per_page=3&lang=hr&with=ingredients,category,tags&diff_
 time=1493902343&page=1</td>
-<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
-time=1493902343&page=1">meals?per_page=3&tags=2&lang=hr&with=ingredients,category,tags&diff_
+<td><a target="_blank" style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/response/meals?per_page=3&lang=hr&with=ingredients,category,tags&diff_
+time=1493902343&page=1">meals?per_page=3&lang=hr&with=ingredients,category,tags&diff_
 time=1493902343&page=1</a></td>
 </tr>
 

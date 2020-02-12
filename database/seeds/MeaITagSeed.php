@@ -20,14 +20,8 @@ class MealTagSeed extends Seeder
             ['meal_id' => '1', 'tag_id' => '1'],
             ['meal_id' => '2', 'tag_id' => '2'],
             ['meal_id' => '3', 'tag_id' => '3'],
+        
 
-            ['meal_id' => '4', 'tag_id' => '4'],
-            ['meal_id' => '5', 'tag_id' => '5'],
-            ['meal_id' => '6', 'tag_id' => '6'],
-
-            ['meal_id' => '7', 'tag_id' => '7'],
-            ['meal_id' => '8', 'tag_id' => '8'],
-            ['meal_id' => '9', 'tag_id' => '9'],
 
         ];
 

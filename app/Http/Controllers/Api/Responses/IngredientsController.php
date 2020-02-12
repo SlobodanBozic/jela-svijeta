@@ -5,11 +5,8 @@ namespace App\Http\Controllers\Api\Responses;
 use App\Ingredient;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
-use Unlu\Laravel\Api\QueryBuilder;
-
 use App\Http\Responses\API\IngredientAPI;
-use App\Language;
+use Validator;
 
 class IngredientsController extends Controller
 {
@@ -20,13 +17,31 @@ class IngredientsController extends Controller
 
         $query = Ingredient::select();
 
-        if(isset($params['lang'])){
 
-        $lang = Language::where('lang', $params['lang'])->first();
-        $language_id = $lang->id;
+        $validator = Validator::make($params, [
+          'per_page' => 'integer',
+          'lang' => 'string|max:2',
+          ],
 
-         $ingredients = $query->where('language_id', $language_id)->get();
-         return IngredientAPI::collection($ingredients);
+          [
+          'per_page.*' => 'Per page must be integer.',
+          'lang.*' => 'Lang value must me string with max 2 char',
+          ]
+        );
+
+        if ($validator->fails()) {
+          return response()->json(['errors'=>$validator->errors()]);
+        }
+
+
+        if(isset($params['lang']) || isset($params['per_page'])){
+
+        app()->setLocale($params['lang']);
+
+        $per_page = isset($params['per_page']) ? $params['per_page'] : 10;
+        $ingredient = $query->paginate($per_page);
+
+         return IngredientAPI::collection($ingredient);
 
        }else
        {
