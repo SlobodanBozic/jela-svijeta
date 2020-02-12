@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 class IngredientTranslation extends Eloquent {
 
     public $timestamps = false;
-    protected $fillable = ['title','slug'];
+    protected $fillable = ['title'];
 
 }

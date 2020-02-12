@@ -17,9 +17,9 @@ class Meal extends Model
 {
     use \Dimsav\Translatable\Translatable;
     use SoftDeletes;
-    protected $fillable = ['category_id'];
-    public $translatedAttributes = ['title', 'slug','description'];
-    protected $hidden = ['translations','deleted_at'];
+    protected $fillable = ['category_id', 'slug', 'status'];
+    public $translatedAttributes = ['title', 'description'];
+    protected $hidden = ['translations', 'deleted_at','category_id'];
 
     /**
      * Set to null if empty

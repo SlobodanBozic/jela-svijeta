@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 class MealTranslation extends Eloquent {
 
     public $timestamps = false;
-    protected $fillable = ['title','slug','description'];
+    protected $fillable = ['title','description'];
 
 }

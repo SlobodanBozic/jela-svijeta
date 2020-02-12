@@ -15,11 +15,9 @@ class CategorySeed extends Seeder
     {
 
         $items = [
-            [],
-            [],
-            [],
-
-
+            ['slug' => 'category-1'],
+            ['slug' => 'category-2'],
+            ['slug' => 'category-3'],
         ];
 
         foreach ($items as $item) {

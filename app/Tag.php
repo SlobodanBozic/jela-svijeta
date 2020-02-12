@@ -16,10 +16,10 @@ class Tag extends Model
     use \Dimsav\Translatable\Translatable;
     use SoftDeletes;
 
-    protected $fillable = [];
-    public $translatedAttributes = ['title', 'slug'];
+    protected $fillable = ['slug'];
+    public $translatedAttributes = ['title'];
     public $timestamps = false;
-    protected $hidden = ['pivot','translations'];
+    protected $hidden = ['pivot','translations','deleted_at'];
 
 
     /**

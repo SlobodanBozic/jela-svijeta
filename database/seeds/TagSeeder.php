@@ -17,9 +17,9 @@ class TagSeed extends Seeder
 
         $items = [
 
-            [],
-            [],
-            [],
+            [ 'slug' => 'tag-1'],
+            [ 'slug' => 'tag-2'],
+            [ 'slug' => 'tag-3'],
 
         ];
 
@@ -34,7 +34,7 @@ class TagSeed extends Seeder
         //
         // for ($i = 0; $i < $limit; $i++) {
         //     DB::table('tags')->insert([ //,
-    
+
         //     ]);
         // }
 

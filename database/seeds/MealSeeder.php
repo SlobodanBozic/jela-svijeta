@@ -17,9 +17,9 @@ class MealSeed extends Seeder
 
         $items = [
 
-            ['category_id'=> '1',],
-            ['category_id'=> '2',],
-            ['category_id'=> NULL,],
+            ['category_id'=> '1', 'slug' => 'jelo-1'],
+            ['category_id'=> '2', 'slug' => 'jelo-2'],
+            ['category_id'=> NULL, 'slug' => 'jelo-3'],
 
             ];
 

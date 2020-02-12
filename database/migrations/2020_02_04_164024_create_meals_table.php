@@ -16,10 +16,10 @@ class CreateMealsTable extends Migration
       if(! Schema::hasTable('meals')) {
           Schema::create('meals', function (Blueprint $table) {
               $table->increments('id');
+              $table->string('slug');
               $table->string('status')->default('created');
               $table->timestamps();
               $table->softDeletes();
-
               $table->index(['deleted_at']);
           });
       }
@@ -32,7 +32,6 @@ class CreateMealsTable extends Migration
               $table->string('locale')->index();
 
               $table->string('title');
-              $table->string('slug');
               $table->string('description');
 
               $table->unique(['meal_id','locale']);

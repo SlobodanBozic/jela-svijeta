@@ -16,8 +16,8 @@ class CreateTagsTable extends Migration
       if(! Schema::hasTable('tags')) {
           Schema::create('tags', function (Blueprint $table) {
               $table->increments('id');
+                $table->string('slug');
               $table->softDeletes();
-
               $table->index(['deleted_at']);
           });
       }
@@ -29,7 +29,6 @@ class CreateTagsTable extends Migration
               $table->integer('tag_id')->unsigned();
               $table->string('locale')->index();
               $table->string('title');
-              $table->string('slug');
               $table->unique(['tag_id','locale']);
               $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
           });

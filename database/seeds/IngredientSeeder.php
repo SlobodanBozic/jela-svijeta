@@ -16,10 +16,9 @@ class IngredientSeed extends Seeder
 
 
         $items = [
-            [],
-            [],
-            [],
-
+            ['slug' => 'sastojak-1'],
+            ['slug' => 'sastojak-2'],
+            ['slug' => 'sastojak-3'],
         ];
 
         foreach ($items as $item) {
@@ -33,7 +32,7 @@ class IngredientSeed extends Seeder
         //
         // for ($i = 0; $i < $limit; $i++) {
         //     DB::table('ingredients')->insert([ //,
-        
+
         //     ]);
         // }
 
