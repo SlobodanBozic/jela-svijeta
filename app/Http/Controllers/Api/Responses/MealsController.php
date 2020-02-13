@@ -24,9 +24,10 @@ class MealsController extends Controller
 
         $validator = Validator::make($params, [
           'per_page' => 'integer',
+          'page' => 'integer',
           'lang' => 'string|max:2',
           'diff_time' => 'numeric',
-          'tags'=> 'integer',
+          'tag'=> 'digits:1',
           'category'=> 'integer',
           'ingredients' => 'integer',
           'with' => 'string'
@@ -34,12 +35,13 @@ class MealsController extends Controller
 
           [
           'per_page.*' => 'Per page must be integer.',
-          'lang.*' => 'Lang value must me string with max 2 char',
-          'diff_time.*' => 'Difftime must be integer number',
-          'tags.*' => 'Difftime must be integer number',
-          'category.*' => 'Difftime must be integer number',
-          'ingredients.*' => 'Difftime must be integer number',
-          'with.*' => 'Difftime must be string.Example: &with=category,tag,ingredient',
+          'page.*' => 'Page must be integer.',
+          'lang.*' => 'Lang value must me string with max 2 chars',
+          'diff_time.*' => 'Difftime must be integer',
+          'tag.*' => 'Tag must be integer',
+          'category.*' => ' Category must be integer',
+          'ingredients.*' => 'Ingredients must be integer',
+          'with.*' => 'With must be string.Example: &with=category,tag,ingredient',
           ]
         );
 
