@@ -20,13 +20,11 @@ class CategoriesController extends Controller
       $validator = Validator::make($params, [
         'per_page' => 'integer',
         'lang' => 'string|max:2',
-        'category' => 'integer'
         ],
 
         [
         'per_page.*' => 'Per page must be integer.',
         'lang.*' => 'Lang value must me string with max 2 char.',
-        'category.*' => 'Category must be integer number.',
         ]
       );
 
@@ -45,7 +43,7 @@ class CategoriesController extends Controller
 
      }else
      {
-       return Category::all();   
+       return Category::all();
      }
     }
 
