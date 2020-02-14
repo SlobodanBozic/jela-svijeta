@@ -19,12 +19,12 @@ class TagsController extends Controller
 
 
       $validator = Validator::make($params, [
-        'per_page' => 'integer',
+        'per_page' => 'integer|min:1',
         'lang' => 'string|max:2',
         ],
 
         [
-        'per_page.*' => 'Per page must be integer.',
+        'per_page.*' => 'Per page must be integer and positive number.',
         'lang.*' => 'Lang value must me string with max 2 char.',
         ]
       );

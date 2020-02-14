@@ -27,24 +27,22 @@ class MealsController extends Controller
       // die;
 
         $validator = Validator::make($params, [
-          'per_page' => 'integer',
+          'per_page' => 'integer|min:1',
           'page' => 'integer',
           'lang' => 'string|max:2',
-          'diff_time' => 'numeric',
+          'diff_time' => 'numeric|min:1',
           'tag'=>  'string',
-          'category'=> 'integer',
-          'ingredients' => 'integer',
+          'category'=> 'integer|min:1',
           'with' => 'string'
           ],
 
           [
-          'per_page.*' => 'Per page must be integer.',
-          'page.*' => 'Page must be integer.',
+          'per_page.*' => 'Per page must be integer and positive number.',
+          'page.*' => 'Page must be integer and positive number.',
           'lang.*' => 'Lang value must me string with max 2 chars',
-          'diff_time.*' => 'Difftime must be integer',
+          'diff_time.*' => 'Difftime must be integer and positive number',
           'tag.*' => 'Tag must be string',
-          'category.*' => ' Category must be integer',
-          'ingredients.*' => 'Ingredients must be integer',
+          'category.*' => ' Category must be integer and positive number',
           'with.*' => 'With must be string.Example: &with=category,tag,ingredient',
           ]
         );
@@ -102,7 +100,6 @@ class MealsController extends Controller
             $query->join('meal_tag', 'meals.id', '=', 'meal_tag.meal_id');
             $query->whereIn('meal_tag.tag_id', $tag);
         }
-
 
         $per_page = isset($params['per_page']) ? $params['per_page'] : 10;
         $meals = $query->paginate($per_page);
